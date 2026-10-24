@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-blush: #fff6f5;
+  --color-rose: #f7cac9;
+  --color-plum: #3b1f2b;
+  --color-raspberry: #d6336c;
+
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-dm);
+}
+
+body {
+  background: var(--color-blush);
+  color: var(--color-plum);
+  font-family: var(--font-sans), sans-serif;
+}
+
+::selection {
+  background: var(--color-raspberry);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-raspberry);
+  outline-offset: 4px;
+}
